@@ -1,5 +1,5 @@
 import sys
-a=sys.stdin.read().splitlines()
-for line in a:
-    line=list(map(int,line.split()))
-    print(abs(line[0]-line[1]))
+lines = sys.stdin.readlines()
+for line in lines:
+    n,m = map(int,line.split())
+    print(abs(n-m))

@@ -1,5 +1,7 @@
-import sys
-X = int(input())
-a=list(map(int,sys.stdin.read().splitlines()))[1:]
-total = X * (len(a)+1)
-print(total - sum(a))
+X=int(input())
+N=int(input())
+t=0
+for i in range(N):
+    t += X
+    t -= int(input())
+print(t+X)
